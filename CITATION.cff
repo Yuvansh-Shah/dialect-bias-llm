@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Same Answer, Fewer Words: brevity and unsignalled locale inference in language model responses to English dialects"
+abstract: >-
+  Matched-pair study of three large language models answering the same question
+  in Standard American English and in an English dialect. 52 base items, 936
+  independent API calls, three repeats per prompt. Finds shorter responses at
+  unchanged accuracy on jurisdiction-free items, and unsignalled locale
+  inference on items whose correct answer depends on jurisdiction.
+type: dataset
+authors:
+  - family-names: Shah
+    given-names: Yuvansh
+    affiliation: "Dhirubhai Ambani International School, Mumbai, India"
+    email: yuvanshshah401@gmail.com
+version: 1.0.0
+date-released: 2026-07-25
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+keywords:
+  - large language models
+  - dialect bias
+  - English dialects
+  - AAVE
+  - Indian English
+  - fairness evaluation
+  - response length
+  - locale inference
+references:
+  - type: article
+    title: "Assessing Dialect Fairness and Robustness of Large Language Models in Reasoning Tasks"
+    doi: "10.48550/arXiv.2410.11005"
+    year: 2025
+    notes: "Source of the African American English (ReDial) items. See NOTICE."
+    authors:
+      - family-names: Lin
+        given-names: Fangru
+      - family-names: Mao
+        given-names: Shaoguang
+      - family-names: La Malfa
+        given-names: Emanuele
+      - family-names: Hofmann
+        given-names: Valentin
+      - family-names: de Wynter
+        given-names: Adrian
+      - family-names: Wang
+        given-names: Xun
+      - family-names: Chen
+        given-names: Si-Qing
+      - family-names: Wooldridge
+        given-names: Michael
+      - family-names: Pierrehumbert
+        given-names: Janet B.
+      - family-names: Wei
+        given-names: Furu

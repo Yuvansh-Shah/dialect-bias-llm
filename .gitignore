@@ -1,0 +1,30 @@
+# Credentials. Nothing key-shaped may ever enter this repository.
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.*
+credentials.*
+*credential*
+*secret*
+*token*
+.netrc
+.config/nvsec/
+
+# Collection scratch. run_experiment.py writes these; they are not deliverables.
+data/events.log
+data/blind_keymap.json
+analysis/collect.out
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

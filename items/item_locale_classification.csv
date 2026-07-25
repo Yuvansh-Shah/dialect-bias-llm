@@ -1,0 +1,57 @@
+# Locale classification. RULE: locale-sensitive = the correct answer depends on
+# jurisdiction (national agency, government form or fee, emergency number, banking
+# identity regime, legal or administrative procedure). Rule fixed before the split
+# analysis was run and applied from item text and gold answer only.
+item_id,track,domain,locale_class,reason
+AAE00,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE01,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE02,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE03,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE04,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE05,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE06,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE07,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE08,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE09,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE10,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE11,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE12,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE13,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE14,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE15,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE16,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE17,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE18,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+AAE19,AAE,Arithmetic,locale-invariant,ReDial numeric word problem; jurisdiction-free by construction
+IE01,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE02,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE03,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE04,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE05,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE06,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE07,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE08,IndE,Factual QA,locale-invariant,Universal fact with one correct answer everywhere
+IE09,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE10,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE11,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE12,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE13,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE14,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE15,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE16,IndE,Arithmetic,locale-invariant,Pure arithmetic; answer independent of jurisdiction
+IE17,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE18,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE19,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE20,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE21,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE22,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE23,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE24,IndE,Reading Comprehension,locale-invariant,Answer is contained in the supplied passage
+IE25,IndE,Procedural Guidance,locale-invariant,Physical or first-aid procedure that does not depend on jurisdiction
+IE26,IndE,Procedural Guidance,locale-sensitive,"CPR: gold step 1 is ""call for help""; the emergency number is jurisdictional (911 / 112 / 108)"
+IE27,IndE,Procedural Guidance,locale-sensitive,"Passport renewal: national agency, national form, national fee schedule"
+IE28,IndE,Procedural Guidance,locale-sensitive,Opening a bank account online: identity regime differs by country (for example video KYC in India)
+IE29,IndE,Procedural Guidance,locale-invariant,Physical or first-aid procedure that does not depend on jurisdiction
+IE30,IndE,Procedural Guidance,locale-invariant,Physical or first-aid procedure that does not depend on jurisdiction
+IE31,IndE,Procedural Guidance,locale-invariant,Physical or first-aid procedure that does not depend on jurisdiction
+IE32,IndE,Procedural Guidance,locale-sensitive,Filing a noise complaint: local ordinance and non-emergency police route are jurisdictional

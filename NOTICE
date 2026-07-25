@@ -1,0 +1,77 @@
+THIRD-PARTY ATTRIBUTION
+=======================
+
+African American English items: the ReDial dataset
+--------------------------------------------------
+
+The 20 African American English items in this repository (item IDs AAE00 to
+AAE19 in items/items.csv, and items/sources/aae_items.json) are derived from
+the ReDial dataset released with:
+
+    Fangru Lin, Shaoguang Mao, Emanuele La Malfa, Valentin Hofmann,
+    Adrian de Wynter, Xun Wang, Si-Qing Chen, Michael Wooldridge,
+    Janet B. Pierrehumbert, Furu Wei.
+    "Assessing Dialect Fairness and Robustness of Large Language Models in
+    Reasoning Tasks." Proceedings of the 63rd Annual Meeting of the
+    Association for Computational Linguistics (ACL), 2025.
+    https://doi.org/10.48550/arXiv.2410.11005
+
+    Source repository: https://github.com/fangru-lin/redial_dialect_robustness_fairness
+    Dataset card:      https://huggingface.co/datasets/fangrulin/redial
+
+Licence
+-------
+
+ReDial is released under the MIT Licence. This was confirmed from two
+independent sources on 25 July 2026: the licence indicator on the GitHub
+repository page, and the "License Identifier: MIT" field on the Hugging Face
+dataset card. The MIT Licence permits redistribution with attribution, which
+is the basis on which these items are included here.
+
+Disclosure: at the time of assembly the body of the ReDial LICENSE file could
+not be retrieved directly (raw.githubusercontent.com returned 404 on both the
+main and master branches, and the GitHub API was unavailable from the
+assembling environment). The licence identifier is therefore quoted from the
+two sources above rather than transcribed from their LICENSE file. If the
+ReDial authors consider this attribution insufficient or incorrect, we will
+correct or remove the items on request.
+
+Stated scope of use, quoted verbatim from the ReDial dataset card
+------------------------------------------------------------------
+
+    Direct Use: "This is a reasoning dataset created by rewriting 7 existing
+    benchmarks...could be used for research on testing language models'
+    reasoning fairness and robustness towards AAVE users."
+
+    Out-of-Scope Use: "This dataset is not intended for use in educational
+    systems or organizations, or for use in health systems."
+
+The present study is research on language model reasoning fairness towards
+AAVE users, which falls within the stated Direct Use. It is not deployed in an
+educational or health system.
+
+What was changed
+----------------
+
+One ReDial item was excluded from this study's primary analysis: AAE08, the
+gingerbread and apple pie problem (RowIdx 8 of the source set). Its
+constraints are mutually contradictory and its two arms are not
+meaning-identical. The full reasoning, with both wordings quoted, is in
+docs/analysis.md section 1. The item is retained in items/items.csv and in
+data/raw_responses.jsonl, and every headline figure is reported both with and
+without it. This is a defect in one item, identified independently by two
+separate analyses; it is not a criticism of the dataset as a whole.
+
+The Standard American English counterparts of these items are reproduced from
+ReDial as supplied.
+
+Indian English items
+--------------------
+
+The 32 Indian English items (IE01 to IE32) were written by the author from
+published grammatical descriptions of the variety, principally:
+
+    P. Sailaja. "Indian English." Edinburgh University Press, 2009.
+
+They have not been validated by native Indian English speakers. This is stated
+as a limitation in the manuscript and is repeated here.

@@ -1,0 +1,526 @@
+{
+ "family": {
+  "n_tests": 9,
+  "alpha": 0.005555555555555556,
+  "description": "3 models x 3 outcomes (correctness, length, register), Bonferroni"
+ },
+ "accuracy_with_without": {
+  "All 52 items|SAE": [
+   459,
+   468
+  ],
+  "All 52 items|DIALECT": [
+   443,
+   468
+  ],
+  "51 items, AAE08 excluded|SAE": [
+   455,
+   459
+  ],
+  "51 items, AAE08 excluded|DIALECT": [
+   442,
+   459
+  ]
+ },
+ "sae_errors": {
+  "IE30": 2,
+  "IE03": 2,
+  "AAE08": 5
+ },
+ "aae_length_per_model": {
+  "gemma-4-31b": {
+   "n": 19,
+   "W": 0.0,
+   "p": 0.00019609335453373022,
+   "shorter": 18,
+   "longer": 0,
+   "ties": 1,
+   "median": -17.666666666666664,
+   "mean": -19.350877192982455
+  },
+  "llama-3.3-70b": {
+   "n": 19,
+   "W": 4.0,
+   "p": 2.6702880859375e-05,
+   "shorter": 18,
+   "longer": 1,
+   "ties": 0,
+   "median": -27.666666666666664,
+   "mean": -33.473684210526315
+  },
+  "glm-5.2": {
+   "n": 19,
+   "W": 14.0,
+   "p": 0.00041961669921875,
+   "shorter": 16,
+   "longer": 3,
+   "ties": 0,
+   "median": -18.666666666666657,
+   "mean": -18.350877192982455
+  }
+ },
+ "aae_pooled_counts": {
+  "shorter": 52,
+  "longer": 4,
+  "ties": 1,
+  "total": 57,
+  "items": 19,
+  "models": 3
+ },
+ "aae_correctness_per_model": {
+  "gemma-4-31b": {
+   "n": 19,
+   "mean": 0.0,
+   "p": 1.0
+  },
+  "llama-3.3-70b": {
+   "n": 19,
+   "mean": 0.0,
+   "p": 1.0
+  },
+  "glm-5.2": {
+   "n": 19,
+   "mean": -7.017543859649123,
+   "p": 0.10247043485974937
+  }
+ },
+ "aae_mean_words": {
+  "sae": 106.62573099415205,
+  "dialect": 82.90058479532163
+ },
+ "locale_length": [
+  {
+   "split": "Indian English, locale-sensitive",
+   "n": 12,
+   "W": 0.0,
+   "p": 0.00048828125,
+   "shorter": 12,
+   "longer": 0,
+   "ties": 0,
+   "median": -299.6666666666667,
+   "mean": -310.02777777777777
+  },
+  {
+   "split": "Indian English, locale-invariant",
+   "n": 84,
+   "W": 1443.0,
+   "p": 0.7664195596325825,
+   "shorter": 38,
+   "longer": 39,
+   "ties": 7,
+   "median": 0.0,
+   "mean": -16.436507936507937
+  },
+  {
+   "split": "Indian English, Factual QA",
+   "n": 24,
+   "W": 72.0,
+   "p": 0.0767530715440475,
+   "shorter": 8,
+   "longer": 14,
+   "ties": 2,
+   "median": 4.166666666666664,
+   "mean": 41.84722222222222
+  },
+  {
+   "split": "Indian English, Arithmetic",
+   "n": 24,
+   "W": 116.0,
+   "p": 0.5032897836125287,
+   "shorter": 10,
+   "longer": 13,
+   "ties": 1,
+   "median": 1.1666666666666625,
+   "mean": -4.083333333333334
+  },
+  {
+   "split": "Indian English, Reading Comprehension",
+   "n": 24,
+   "W": 93.5,
+   "p": 0.6675228235494093,
+   "shorter": 11,
+   "longer": 9,
+   "ties": 4,
+   "median": 0.0,
+   "mean": 2.7916666666666665
+  },
+  {
+   "split": "Procedural, locale-invariant",
+   "n": 12,
+   "W": 6.0,
+   "p": 0.0068359375,
+   "shorter": 9,
+   "longer": 3,
+   "ties": 0,
+   "median": -264.33333333333337,
+   "mean": -196.16666666666666
+  },
+  {
+   "split": "AAE track (all locale-invariant)",
+   "n": 57,
+   "W": 49.0,
+   "p": 9.979829163463303e-10,
+   "shorter": 52,
+   "longer": 4,
+   "ties": 1,
+   "median": -20.666666666666657,
+   "mean": -23.72514619883041
+  }
+ ],
+ "passport_example": {
+  "model": "meta/llama-3.3-70b-instruct",
+  "sae_words": [
+   452,
+   547,
+   486
+  ],
+  "dialect_words": [
+   49,
+   45,
+   49
+  ],
+  "sae_mean": 495.0,
+  "dialect_mean": 47.666666666666664,
+  "sae_prompt": "What are the steps to apply for a passport renewal?",
+  "dialect_prompt": "Passport renewal, what all steps are there for applying, kindly tell me only.",
+  "dialect_response_rep1": "Here are the steps for passport renewal:\n\n1. Fill online application form\n2. Pay the application fee\n3. Schedule an appointment\n4. Gather required documents\n5. Visit the passport office\n6. Submit the application\n7. Police verification (if required)\n8. Print the application receipt\n9. Receive the new passport"
+ },
+ "levels": {
+  "AAE08 excluded (primary)": {
+   "sae_k": 455,
+   "sae_n": 459,
+   "dia_k": 442,
+   "dia_n": 459,
+   "graded_n": 153,
+   "graded_mean": -2.8322440087145972,
+   "graded_b": 9,
+   "graded_c": 1,
+   "graded_p": 0.007169734292803208,
+   "sign_p": 0.021484375,
+   "collapsed_n": 153,
+   "collapsed_b": 3,
+   "collapsed_c": 1,
+   "collapsed_p": 0.625
+  },
+  "All 52 items (sensitivity)": {
+   "sae_k": 459,
+   "sae_n": 468,
+   "dia_k": 443,
+   "dia_n": 468,
+   "graded_n": 156,
+   "graded_mean": -3.418803418803418,
+   "graded_b": 11,
+   "graded_c": 1,
+   "graded_p": 0.0033805040388374895,
+   "sign_p": 0.00634765625,
+   "collapsed_n": 156,
+   "collapsed_b": 5,
+   "collapsed_c": 1,
+   "collapsed_p": 0.21875
+  }
+ },
+ "per_model_levels": {
+  "google/gemma-4-31b-it": {
+   "graded_b": 1,
+   "graded_c": 1,
+   "graded_p": 0.6547208460185769,
+   "collapsed_b": 0,
+   "collapsed_c": 1,
+   "collapsed_p": 1.0
+  },
+  "meta/llama-3.3-70b-instruct": {
+   "graded_b": 2,
+   "graded_c": 0,
+   "graded_p": 0.17971249487899976,
+   "collapsed_b": 1,
+   "collapsed_c": 0,
+   "collapsed_p": 1.0
+  },
+  "z-ai/glm-5.2": {
+   "graded_b": 6,
+   "graded_c": 0,
+   "graded_p": 0.023544102412552784,
+   "collapsed_b": 2,
+   "collapsed_c": 0,
+   "collapsed_p": 0.5
+  }
+ },
+ "accuracy_binary_graded": {
+  "gemma-4-31b|SAE": {
+   "binary": 98.0392156862745,
+   "graded": 98.69281045751634,
+   "n": 51
+  },
+  "gemma-4-31b|DIALECT": {
+   "binary": 100.0,
+   "graded": 98.69281045751633,
+   "n": 51
+  },
+  "llama-3.3-70b|SAE": {
+   "binary": 98.0392156862745,
+   "graded": 98.69281045751634,
+   "n": 51
+  },
+  "llama-3.3-70b|DIALECT": {
+   "binary": 96.07843137254902,
+   "graded": 96.07843137254902,
+   "n": 51
+  },
+  "glm-5.2|SAE": {
+   "binary": 100.0,
+   "graded": 100.0,
+   "n": 51
+  },
+  "glm-5.2|DIALECT": {
+   "binary": 96.07843137254902,
+   "graded": 94.11764705882352,
+   "n": 51
+  }
+ },
+ "step_coverage": {
+  "Procedural, locale-invariant|SAE": {
+   "steps": 6.111111111111111,
+   "total": 6.5,
+   "coverage": 0.9412698412698413,
+   "words": 564.5277777777778,
+   "n": 36
+  },
+  "Procedural, locale-invariant|DIALECT": {
+   "steps": 5.75,
+   "total": 6.5,
+   "coverage": 0.8785714285714286,
+   "words": 368.3611111111111,
+   "n": 36
+  },
+  "Procedural, locale-sensitive|SAE": {
+   "steps": 5.138888888888889,
+   "total": 5.5,
+   "coverage": 0.9361111111111112,
+   "words": 589.6666666666666,
+   "n": 36
+  },
+  "Procedural, locale-sensitive|DIALECT": {
+   "steps": 5.111111111111111,
+   "total": 5.5,
+   "coverage": 0.9305555555555556,
+   "words": 279.6388888888889,
+   "n": 36
+  },
+  "Procedural, locale-invariant|paired": {
+   "n": 12,
+   "mean": -0.0626984126984127,
+   "median": -0.02380952380952378,
+   "p": 0.078125,
+   "worse": 6,
+   "better": 1,
+   "ties": 5
+  },
+  "Procedural, locale-sensitive|paired": {
+   "n": 12,
+   "mean": -0.005555555555555564,
+   "median": 0.0,
+   "p": 0.6640625,
+   "worse": 4,
+   "better": 4,
+   "ties": 4
+  }
+ },
+ "step_power": {
+  "mean_diff": -0.0626984126984127,
+  "sd": 0.10569894458580276,
+  "dz": -0.5931791745329708,
+  "n_pairs_alpha05": 23,
+  "n_items_alpha05": 8,
+  "n_pairs_family": 38,
+  "n_items_family": 13
+ },
+ "register_rates_excl": [
+  {
+   "model": "gemma-4-31b",
+   "cond": "SAE",
+   "brit": 6,
+   "eligible": 102,
+   "rate": 0.058823529411764705
+  },
+  {
+   "model": "gemma-4-31b",
+   "cond": "DIALECT",
+   "brit": 1,
+   "eligible": 61,
+   "rate": 0.01639344262295082
+  },
+  {
+   "model": "llama-3.3-70b",
+   "cond": "SAE",
+   "brit": 1,
+   "eligible": 82,
+   "rate": 0.012195121951219513
+  },
+  {
+   "model": "llama-3.3-70b",
+   "cond": "DIALECT",
+   "brit": 2,
+   "eligible": 61,
+   "rate": 0.03278688524590164
+  },
+  {
+   "model": "glm-5.2",
+   "cond": "SAE",
+   "brit": 1,
+   "eligible": 137,
+   "rate": 0.0072992700729927005
+  },
+  {
+   "model": "glm-5.2",
+   "cond": "DIALECT",
+   "brit": 1,
+   "eligible": 126,
+   "rate": 0.007936507936507936
+  }
+ ],
+ "register_paired": {
+  "gemma-4-31b": {
+   "n": 10,
+   "W": 0.0,
+   "p": 1.0,
+   "shorter": 0,
+   "longer": 1,
+   "ties": 9,
+   "median": 0.0,
+   "mean": 0.5556666666666665
+  },
+  "llama-3.3-70b": {
+   "n": 8,
+   "W": 2.0,
+   "p": 0.75,
+   "shorter": 1,
+   "longer": 2,
+   "ties": 5,
+   "median": 0.0,
+   "mean": 9.895833333333334
+  },
+  "glm-5.2": {
+   "n": 16,
+   "W": 0.0,
+   "p": 0.31731050786291415,
+   "shorter": 0,
+   "longer": 1,
+   "ties": 15,
+   "median": 0.0,
+   "mean": 0.14875000000000002
+  }
+ },
+ "family_tests": [
+  {
+   "outcome": "Correctness",
+   "model": "gemma-4-31b",
+   "n": 51,
+   "W": 1.0,
+   "p": 0.6547208460185769,
+   "survives": "no"
+  },
+  {
+   "outcome": "Correctness",
+   "model": "llama-3.3-70b",
+   "n": 51,
+   "W": 0.0,
+   "p": 0.17971249487899976,
+   "survives": "no"
+  },
+  {
+   "outcome": "Correctness",
+   "model": "glm-5.2",
+   "n": 51,
+   "W": 0.0,
+   "p": 0.023544102412552784,
+   "survives": "no"
+  },
+  {
+   "outcome": "Length",
+   "model": "gemma-4-31b",
+   "n": 51,
+   "W": 219.0,
+   "p": 0.0007528401576562182,
+   "survives": "yes"
+  },
+  {
+   "outcome": "Length",
+   "model": "llama-3.3-70b",
+   "n": 51,
+   "W": 241.5,
+   "p": 0.00013198729649344096,
+   "survives": "yes"
+  },
+  {
+   "outcome": "Length",
+   "model": "glm-5.2",
+   "n": 51,
+   "W": 400.0,
+   "p": 0.02186179646817127,
+   "survives": "no"
+  },
+  {
+   "outcome": "Register",
+   "model": "gemma-4-31b",
+   "n": 10,
+   "W": 0.0,
+   "p": 1.0,
+   "survives": "no"
+  },
+  {
+   "outcome": "Register",
+   "model": "llama-3.3-70b",
+   "n": 8,
+   "W": 2.0,
+   "p": 0.75,
+   "survives": "no"
+  },
+  {
+   "outcome": "Register",
+   "model": "glm-5.2",
+   "n": 16,
+   "W": 0.0,
+   "p": 0.31731050786291415,
+   "survives": "no"
+  }
+ ],
+ "power": [
+  {
+   "pi": 0.01,
+   "n": 161
+  },
+  {
+   "pi": 0.02,
+   "n": 80
+  },
+  {
+   "pi": 0.03,
+   "n": 53
+  },
+  {
+   "pi": 0.05,
+   "n": 32
+  },
+  {
+   "pi": 0.1,
+   "n": 16
+  },
+  {
+   "pi": 0.2,
+   "n": 8
+  }
+ ],
+ "inventory": {
+  "total": 936,
+  "models": [
+   "google/gemma-4-31b-it",
+   "meta/llama-3.3-70b-instruct",
+   "z-ai/glm-5.2"
+  ],
+  "items_all": 52,
+  "items_primary": 51,
+  "excluded": [
+   "AAE08"
+  ]
+ }
+}
