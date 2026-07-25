@@ -15,6 +15,16 @@ authors:
     email: yuvanshshah401@gmail.com
 version: 1.0.0
 date-released: 2026-07-25
+doi: 10.5281/zenodo.21566323
+repository-code: "https://github.com/Yuvansh-Shah/dialect-bias-llm"
+url: "https://doi.org/10.5281/zenodo.21566323"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21566323
+    description: "Concept DOI, always resolves to the latest archived version"
+  - type: doi
+    value: 10.5281/zenodo.21566324
+    description: "Version DOI for release v1.0.0"
 license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 keywords:

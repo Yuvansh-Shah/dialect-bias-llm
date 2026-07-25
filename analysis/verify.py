@@ -226,7 +226,27 @@ chk('not a direct refutation' in allt.lower(),"register non-replication is cavea
 PE=F['passport_example']
 for wv in PE['sae_words']+PE['dialect_words']:
     chk(str(wv) in allt,f"manuscript states passport word count {wv}")
-chk('DATA NEEDED' in allt,"repository gap still flagged")
+# The archive now exists, so no placeholder may remain anywhere in the repository.
+_MARKER_LIT='DATA '+'NEEDED'   # concatenated so this file never contains the literal
+chk(_MARKER_LIT not in allt,"no placeholder marker remains in the manuscript")
+CONCEPT_DOI='10.5281/zenodo.21566323'
+chk(CONCEPT_DOI in allt,f"manuscript states the concept DOI {CONCEPT_DOI}")
+chk('github.com/Yuvansh-Shah/dialect-bias-llm' in allt,"manuscript states the repository URL")
+_MARKER=_MARKER_LIT
+# pilot-superseded/ is excluded deliberately: those are the June pilot's own historical
+# documents, and BLOCKERS.md records the placeholder THAT study carried. Rewriting it would
+# falsify the record. The check covers the live study only.
+_marker_hits=[]
+for _p in ROOT.rglob('*'):
+    if not _p.is_file() or '.git/' in str(_p): continue
+    if 'pilot-superseded' in _p.parts: continue
+    if _p.suffix.lower() in {'.pdf','.doc','.docx','.xlsx','.jsonl','.png'}: continue
+    try: _t=_p.read_text(encoding='utf-8',errors='ignore')
+    except Exception: continue
+    if _MARKER in _t: _marker_hits.append(str(_p.relative_to(ROOT)))
+chk(not _marker_hits,f"no placeholder marker in any live text file (found: {_marker_hits})")
+chk(CONCEPT_DOI in (ROOT/'README.md').read_text(encoding='utf-8'),"README states the concept DOI")
+chk(CONCEPT_DOI in (ROOT/'CITATION.cff').read_text(encoding='utf-8'),"CITATION.cff states the concept DOI")
 chk('4.2' in text,"contradictions section present")
 fn='ShahDialectBiasLLM.doc'
 chk(len(fn)<30 and fn.rsplit('.',1)[0].isalnum() and os.path.exists(str(DOCS_DIR/fn)),

@@ -15,7 +15,7 @@ Manuscript: `docs/ShahDialectBiasLLM.doc`. Full statistics: `docs/analysis.md`.
 Requires Python 3.11+ and an NVIDIA API key from https://build.nvidia.com.
 
 ```bash
-git clone https://github.com/<owner>/dialect-bias-llm.git
+git clone https://github.com/Yuvansh-Shah/dialect-bias-llm.git
 cd dialect-bias-llm
 python3 -m pip install numpy scipy matplotlib python-docx openpyxl
 ```
@@ -180,7 +180,19 @@ Read it before reusing those items.
 
 See [`CITATION.cff`](CITATION.cff). Please also cite the ReDial paper if you use the AAE items.
 
-[DATA NEEDED: repository URL and archival DOI. No repository or archive existed at the time this
-README was written. Once the repository is published and a Zenodo release is archived, this
-block is replaced with the repository URL and the concept DOI, which always resolves to the
-latest version.]
+Archived on Zenodo. The DOI below is the concept DOI, which always resolves to the most recent
+archived version:
+
+**https://doi.org/10.5281/zenodo.21566323**
+
+The version-specific DOI for a given release is listed on that record. Release v1.0.0 is
+archived at https://doi.org/10.5281/zenodo.21566324.
+
+```
+Shah, Y. (2026). Same Answer, Fewer Words: brevity and unsignalled locale inference in
+language model responses to English dialects. Zenodo.
+https://doi.org/10.5281/zenodo.21566323
+```
+
+Please also cite the ReDial paper if you use the African American English items; see
+[`NOTICE`](NOTICE).
