@@ -55,6 +55,7 @@ reusing `analyse.py`, so it is an independent check rather than a restatement.
 | `.gitignore` | Excludes credential files, collection scratch, and Python artefacts. |
 | `items/items.csv` | 104 rows: 52 base items x 2 arms. Columns: item_id, domain, arm, prompt, gold_answer, dialect_features. Pre-randomised row order; process in file order. |
 | `items/item_locale_classification.csv` | Every item classified locale-sensitive or locale-invariant, with a one-line reason each. Classification rule fixed before the split analysis was run. |
+| `items/locale_sensitive_hand_coding.csv` | Hand coding of the 72 responses to the four locale-sensitive items (IE26, IE27, IE28, IE32): jurisdiction of the content (US, India, mixed, generic) and disclosure of the assumed jurisdiction (explicit, hedge, none). Definitions in the file header and in the CJSJ manuscript. |
 | `items/arm_mapping.csv` | Which of arm A / arm B is the SAE wording, per item. Not consulted during collection or scoring. |
 | `items/sources/aae_items.json` | The 20 ReDial-derived AAE items as received. See `NOTICE`. |
 | `items/sources/indian_english_dialect_items.xlsx` | The 32 author-written Indian English items, with the feature used in each. |
